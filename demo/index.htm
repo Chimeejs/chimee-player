@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ChimePlayer Demo</title>
+    <meta charset="utf-8">
+    <meta name="description" content="ChimePlayer Demo">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" type="text/css" href="./index.css">
+</head>
+<body>
+
+    <header>
+        <h1>ChimePlayer Demo</h1>
+        <p id="tabs_box">
+            Shortcuts:
+            <button type="button"
+            data-box="native" 
+            data-type="vod" 
+            data-src="http://cdn.toxicjohann.com/lostStar.mp4"
+            >VOD-MP4</button>
+            <button type="button"
+            data-box="flv" 
+            data-type="vod" 
+            data-src="http://yunxianchang.live.ujne7.com/vod-system-bj/TLaf2cc9d469939803949187b46da16c45.flv"
+            >VOD-FLV</button>
+            <button type="button" 
+            data-box="hls" 
+            data-type="vod" 
+            data-src="http://yunxianchang.live.ujne7.com/vod-system-bj/79_3041054cc65-ae8c-4b63-8937-5ccb05f79720.m3u8"
+            >VOD-HLS</button>
+            <button type="button" 
+            data-box="flv" 
+            data-type="live" 
+            data-src="http://pf.live.360vcloud.net/live_customers3/605d90cc6203e78e7ec9"
+            >LIVE-FLV</button>
+            <button type="button" 
+            data-box="hls" 
+            data-type="live" 
+            data-src="http://ph.live.360vcloud.net/live_customers3/605d90cc6203e78e7ec9/index.m3u8"
+            >LIVE-HLS</button>
+        </p>
+        <p>
+            type: 
+            <select id="type">
+                <option value="vod">vod</option>
+                <option value="live">live</option>
+            </select>
+            &nbsp; &nbsp;
+            box: 
+            <select id="box">
+                <option value="native">mp4</option>
+                <option value="flv">flv</option>
+                <option value="hls">hls</option>
+            </select>
+            &nbsp; &nbsp;
+            src: 
+            <input type="text" id="src" value="http://cdn.toxicjohann.com/lostStar.mp4" size="50">
+            <input type="hidden" id="poster">
+            &nbsp; &nbsp;
+            <button type="button" id="enter">Enter</button>
+        </p>
+    </header>
+    <section id="wrapper" class="chimee-container">
+        <video tabindex="-1"></video>
+    </section>
+    <script src="../lib/index.browser.js"></script>
+    <script src="https://s.ssl.qhres.com/static/af3c1d4b462cc178/jquery.js" ></script>
+    <script src="./index.js"></script>
+</body>
+</html>
