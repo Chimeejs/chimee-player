@@ -1,6 +1,6 @@
 {
   "name": "chimee-player",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A complete set of H5 player",
   "main": "lib/index.js",
   "module": "lib/index.mjs",
@@ -62,7 +62,7 @@
     "jest": "^20.0.4",
     "postcss-nested": "^2.1.2",
     "rollup": "^0.47.4",
-    "rollup-plugin-babel": "^3.0.1",
+    "rollup-plugin-babel": "^3.0.2",
     "rollup-plugin-commonjs": "^8.0.2",
     "rollup-plugin-node-resolve": "^3.0.0",
     "rollup-plugin-postcss": "^0.5.4",
