@@ -15,4 +15,7 @@
       outline: 0;
     }
   }
+  chimee-center-state-loading {
+    box-sizing: initial;
+  }
 }
