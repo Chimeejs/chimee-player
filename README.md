@@ -5,9 +5,8 @@
 并集成了以下官方UI插件：
 > 1. [chimee-plugin-controlbar](https://github.com/Chimeejs/chimee-plugin-controlbar)
 > 2. [chimee-plugin-center-state](https://github.com/Chimeejs/chimee-plugin-center-state)
-> 3. [chimee-plugin-loading](https://github.com/Chimeejs/chimee-plugin-loading)
-> 4. [chimee-plugin-contextmenu](https://github.com/Chimeejs/chimee-plugin-contextmenu)
-> 5. [chimee-plugin-log](https://github.com/Chimeejs/chimee-plugin-log)
+> 3. [chimee-plugin-contextmenu](https://github.com/Chimeejs/chimee-plugin-contextmenu)
+> 4. [chimee-plugin-log](https://github.com/Chimeejs/chimee-plugin-log)
 
 也默认包含FLV&HLS解码器：
 > 1. [chimee-kernel-flv](https://github.com/Chimeejs/chimee-kernel-flv)
