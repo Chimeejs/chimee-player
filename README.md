@@ -15,8 +15,8 @@
 ## 基本用法
 
 > 首先根据您的业务场景，你可以直接将lib目录下适合的打包文件引入您的业务代码中，比如直接引用JS。
-> 或者您的项目基于nodejs环境构建的话，直接执行 `npm install chimee-player`，然后再在代码中`
-import ChimeePlayer from 'chimee-player';`即可。
+> 或者您的项目基于nodejs环境构建的话，直接执行 `npm install chimee-player --save`，
+> 然后再在代码中`import ChimeePlayer from 'chimee-player';`即可。
 
 基于点播场景，可以这样使用：
 
