@@ -22,7 +22,7 @@
 
 基于点播场景，可以这样使用：
 
-> 需要先给要放置播放器的DOM容器增加一个class `chimee-container`。
+> 需要先给要放置播放器的DOM容器增加一个class `chimee-container`，或者您自己有对容器写position非static的值的话，可以省掉这步。
 
 ```javascript
 new ChimeePlayer({
