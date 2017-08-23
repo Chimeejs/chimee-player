@@ -12,11 +12,13 @@
 > 1. [chimee-kernel-flv](https://github.com/Chimeejs/chimee-kernel-flv)
 > 2. [chimee-kernel-hls](https://github.com/Chimeejs/chimee-kernel-hls)
 
-## 基本用法
+## 安装
 
-> 首先根据您的业务场景，你可以直接将lib目录下适合的打包文件引入您的业务代码中，比如直接引用JS。
-> 或者您的项目基于nodejs环境构建的话，直接执行 `npm install chimee-player --save`，
-> 然后再在代码中`import ChimeePlayer from 'chimee-player';`即可。
+首先根据您的业务场景，你可以直接将lib目录下适合的打包文件引入您的业务代码中，比如直接引用JS。
+
+或者您的项目基于nodejs环境构建的话，直接执行 `npm install chimee-player --save`，然后再在代码中`import ChimeePlayer from 'chimee-player';`即可。
+
+## 基本用法
 
 基于点播场景，可以这样使用：
 
@@ -80,11 +82,10 @@ new ChimeePlayer({
 
 ## 添加自定义插件
 
-> 这里以使用 chimeePluginPopup 工厂方法创建插件为例。
+> 这里以使用 ChimeePlayer.popupFactory 工厂方法创建插件为例。
 
 ```javascript
-import chimeePluginPopup from 'chimee-plugin-popup';
-Chimee.install(chimeePluginPopup({
+Chimee.install(ChimeePlayer.popupFactory({
   name: 'my_popup',
   title: '这是一个居中信息框',
   body: '这里是信息内容',
