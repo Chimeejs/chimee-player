@@ -22,6 +22,8 @@
 
 基于点播场景，可以这样使用：
 
+> 需要先给要放置播放器的DOM容器增加一个class `chimee-container`。
+
 ```javascript
 new ChimeePlayer({
   wrapper: '#wrapper',  // video dom容器
