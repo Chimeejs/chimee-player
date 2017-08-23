@@ -4,6 +4,7 @@ import chimeeControl from 'chimee-plugin-controlbar';
 import chimeeCenterState from 'chimee-plugin-center-state';
 import chimeeContextmenu from 'chimee-plugin-contextmenu';
 import chimeeLog from 'chimee-plugin-log';
+import chimeePluginPopupFactory from 'chimee-plugin-popup';
 import chimeeKernelHls from 'chimee-kernel-hls';
 import chimeeKernelFlv from 'chimee-kernel-flv';
 import './index.css';
@@ -42,20 +43,12 @@ class ChimeePlayer extends Chimee {
 
     super(config);
 
-    // loading效果
-    this.on('loadstart', ()=>{
-      this.chimeeCenterState.showLoading(true);
-      this.chimeeControl.$dom.getElementsByTagName('chimee-progressbar')[0].style.pointerEvents = 'none';
-    });
-    this.on('canplay', ()=>{
-      this.chimeeCenterState.showLoading(false);
-      this.chimeeControl.$dom.getElementsByTagName('chimee-progressbar')[0].style.pointerEvents = 'auto';
-    });
-
     // 右键菜单的播放暂停
     this.on('play', () => this.chimeeContextmenu.updatemenu([{text: '暂停', action: 'pause'}]));
     this.on('pause', () => this.chimeeContextmenu.updatemenu([{text: '播放', action: 'play'}]));
   }
 }
+// 暴露浮层工厂方法
+ChimeePlayer.popupFactory = chimeePluginPopupFactory;
 
 export default ChimeePlayer;
