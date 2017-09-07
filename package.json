@@ -1,6 +1,6 @@
 {
   "name": "chimee-player",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A complete set of H5 player",
   "main": "lib/index.js",
   "module": "lib/index.mjs",
@@ -39,7 +39,7 @@
   "homepage": "https://github.com/Chimeejs/chimee-player#readme",
   "dependencies": {
     "babel-runtime": "^6.26.0",
-    "chimee": "^0.2.7",
+    "chimee": "^0.2.8",
     "chimee-helper": "^0.2.3",
     "chimee-kernel-flv": "^1.0.6",
     "chimee-kernel-hls": "^1.0.6",
