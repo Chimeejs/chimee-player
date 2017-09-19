@@ -108,5 +108,8 @@ new ChimeePlayer({
 ## 二次开发
 当前播放器因为包含了几乎全量的官方插件，打包后体积偏大（打包文件 1.4M，uglify 处理后 514KB, [gzip后 136KB](https://s2.ssl.qhres.com/!1f6e9263/index.browser.js)）,如果您希望使用更符合业务场景体积更小的代码量（比如你可能不需要FLV或HLS解码器），那可以适当删减 `src/index.js` 中的代码后，重新 `npm run build` 得到想要的打包代码。
 
+## 兼容 IE
+Chimee 本身的设计是兼容 IE 的， 但是需要 [babel-polyfill](https://babeljs.io/docs/usage/polyfill/) 的支持。因此如果你确实需要在 IE 中使用 chimee, 请确保你已引入 babel-polyfill。
+
 ##### 希望您用着方便，有相应问题请随时反馈。
 
