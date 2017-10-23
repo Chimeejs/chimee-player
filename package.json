@@ -1,6 +1,6 @@
 {
   "name": "chimee-player",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "description": "A complete set of H5 player",
   "main": "lib/index.js",
   "module": "lib/index.mjs",
@@ -45,7 +45,7 @@
     "chimee-kernel-hls": "^1.0.6",
     "chimee-plugin-center-state": "0.0.7",
     "chimee-plugin-contextmenu": "0.0.8",
-    "chimee-plugin-controlbar": "^0.1.11",
+    "chimee-plugin-controlbar": "^0.2.1",
     "chimee-plugin-log": "0.0.3"
   },
   "devDependencies": {
