@@ -18,7 +18,7 @@ test('construction', () => {
     wrapper: '#wrapper',
     autoplay: true,
     controls: true,
-    plugin:[ { name: 'chimeeLog'},'chimeeTextmenu' ],
+    plugin:[ { name: 'chimeeLog'},'chimeeContextmenu' ],
     preset: {}
   });
   expect(player.src).toBe(src);
