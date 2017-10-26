@@ -6,6 +6,8 @@ Chimee支持MP4、M3U8、FLV等多种媒体格式，同时它也帮我们解决�
 
 ![image](https://p1.ssl.qhimg.com/t01ae71ba8ba7cece9e.png)
 
+（[去Chimee官网试用一下](https://chimee.org/)）
+
 Chimee帮我们解决了日常H5-Video应用开发中常见的几大问题：
 
 1. 各浏览器环境UI不统一的问题
