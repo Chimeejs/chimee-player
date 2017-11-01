@@ -1,6 +1,6 @@
 {
   "name": "chimee-player",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "A complete set of H5 player",
   "main": "lib/index.js",
   "module": "lib/index.mjs",
@@ -39,13 +39,13 @@
   "homepage": "https://github.com/Chimeejs/chimee-player#readme",
   "dependencies": {
     "babel-runtime": "^6.26.0",
-    "chimee": "^0.2.8",
-    "chimee-helper": "^0.2.3",
-    "chimee-kernel-flv": "^1.0.6",
-    "chimee-kernel-hls": "^1.0.6",
+    "chimee": "^0.3.1",
+    "chimee-helper": "^0.2.5",
+    "chimee-kernel-flv": "^1.2.0",
+    "chimee-kernel-hls": "^1.0.7",
     "chimee-plugin-center-state": "0.0.7",
     "chimee-plugin-contextmenu": "0.0.8",
-    "chimee-plugin-controlbar": "^0.2.1",
+    "chimee-plugin-controlbar": "^0.2.6",
     "chimee-plugin-log": "0.0.3"
   },
   "devDependencies": {
@@ -55,17 +55,17 @@
     "babel-preset-es2015-rollup": "^3.0.0",
     "babel-preset-latest": "^6.24.1",
     "cssnano": "^3.10.0",
-    "eslint": "^4.5.0",
+    "eslint": "^4.10.0",
     "eslint-plugin-jest": "^20.0.3",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^20.0.4",
     "postcss-nested": "^2.1.2",
     "rollup": "^0.48.2",
     "rollup-plugin-babel": "^3.0.2",
-    "rollup-plugin-commonjs": "^8.2.0",
+    "rollup-plugin-commonjs": "^8.2.6",
     "rollup-plugin-node-resolve": "^3.0.0",
-    "rollup-plugin-postcss": "^0.5.4",
-    "rollup-plugin-replace": "^1.1.1",
+    "rollup-plugin-postcss": "^0.5.5",
+    "rollup-plugin-replace": "^1.2.1",
     "rollup-plugin-uglify": "^2.0.1"
   },
   "jest": {

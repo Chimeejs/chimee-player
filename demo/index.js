@@ -53,10 +53,10 @@ function getSDLiveHlsUrl(sn, cbk){
   });
 }
 // 取个SD的HLS直播流来用用
-getSDLiveHlsUrl('36062719167', function(hls, poster){
+getSDLiveHlsUrl('3'+'6072736182', function(hls, poster){
   $('button[data-box="hls"][data-type="live"]').attr('data-src',hls).attr('data-poster', poster);
 });
 // 取个SD的FLV直播流来用用
-getSDLiveHlsUrl('3' + '6060707089', function(hls, poster){
-  $('button[data-box="flv"][data-type="live"]').attr('data-src',hls.replace('hls-live', 'flv').replace('/index.m3u8','.flv')).attr('data-poster', poster);
+getSDLiveHlsUrl('3' + '60K0909965', function(hls, poster){
+  $('button[data-box="flv"][data-type="live"]').attr('data-src',hls.replace('hls-live', 'flv-live').replace('/index.m3u8','.flv')).attr('data-poster', poster);
 });
