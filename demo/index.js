@@ -53,7 +53,7 @@ function getSDLiveHlsUrl(sn, cbk){
   });
 }
 // 取个SD的HLS直播流来用用
-getSDLiveHlsUrl('3'+'6072736182', function(hls, poster){
+getSDLiveHlsUrl('3'+'6052770915', function(hls, poster){
   $('button[data-box="hls"][data-type="live"]').attr('data-src',hls).attr('data-poster', poster);
 });
 // 取个SD的FLV直播流来用用
