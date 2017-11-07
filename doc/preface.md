@@ -29,20 +29,20 @@ H5中视频播放，像我们以前使用IMG标签插入图片到网页里一样
 
 ##### MP4：
 
-![image](https://p4.ssl.qhimg.com/d/inn/a86851ea8872/caniuse_mp4.jpg)
+![image](https://p4.ssl.qhimg.com/dm/888_199_/d/inn/a86851ea8872/caniuse_mp4.jpg)
 
 ##### WebM：
 
-![image](https://p4.ssl.qhimg.com/d/inn/a1ba51ea8872/caniuse_webm.jpg)
+![image](https://p4.ssl.qhimg.com/dm/888_199_/d/inn/a1ba51ea8872/caniuse_webm.jpg)
 
 ##### OGG：
 
-![image](https://p0.ssl.qhimg.com/d/inn/cb5251ea8872/caniuse_ogg.jpg)
+![image](https://p0.ssl.qhimg.com/dm/888_199_/d/inn/cb5251ea8872/caniuse_ogg.jpg)
 
 
 ##### M3U8：
 
-![image](https://p3.ssl.qhimg.com/d/inn/195851ea8872/caniuse_m3u8.jpg)
+![image](https://p3.ssl.qhimg.com/dm/888_199_/d/inn/195851ea8872/caniuse_m3u8.jpg)
 
 通过上面可以看到，目前就MP4各浏览器的兼容较好。这种浏览器之间媒体格式支持的差异化，使得我们必须得考虑不同用户环境的兼容问题。比较庆幸的是Video标准制定中也考虑了这些问题，比如在HTML代码的编写上我们可以在video标签内嵌套source标签来达成不同兼容环境下设定相应媒体源的需求：
 
@@ -209,7 +209,7 @@ function fetchAB (url, cb) {
 
 因为作为WEB前端研发人员，必须要面对不同的浏览器环境各自的实现，这就像挨个打开不同的大门，而每个大门里面蕴藏的是整齐有序还是杂乱无章亦或随心所欲，打开之前都是未知的...
 
-![image](https://chimee.org/ppt/img/zawu.gif)
+![image](https://media.giphy.com/media/l2SpS6MdfeYgPHZpC/giphy.gif)
 
 ### 三. 无法避免的环境差异
 
