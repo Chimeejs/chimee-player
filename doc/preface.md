@@ -270,7 +270,7 @@ W3C标准和MDN告诉我们可以通过VideoElement.error取得媒体播放异�
 
 到系统层面来看，不同版本支持的类型或编解码版本，也会存在各种不同的差异；当你不停的查标准规范、查API文档，再不停的实践，你也许会发现 ---- “哇靠，真的是‘能力越大责任越大’呢”。
 
-![image](https://wx3.sinaimg.cn/mw690/538efefbly1fil8l2sjh9g20f108g4qz.gif#https://www.chimee.org/ppt/img/shuilongtou.gif)
+![image](https://media.giphy.com/media/14nYsrWlBphE2Y/giphy.gif#https://www.chimee.org/ppt/img/shuilongtou.gif)
 
 ### 四. 视频播放业务层比较纠结的几个问题
 
