@@ -1,6 +1,6 @@
 # ChimeePlayer
 
-这是基于[chimee](https://github.com/Chimeejs/chimee)集成的一套您可以直接使用的HTML5播放器，提供有了默认样式。
+这是基于[chimee](https://github.com/Chimeejs/chimee)集成的一套您可以直接使用的HTML5播放器，提供有了默认样式，此时要避免CSS中给video写死宽高值---以避免全屏不能正常使用。
 
 并集成了以下官方UI插件：
 > 1. [chimee-plugin-controlbar](https://github.com/Chimeejs/chimee-plugin-controlbar)
@@ -63,7 +63,8 @@ new ChimeePlayer({
 ![](https://p2.ssl.qhimg.com/dr/600__/t01093aadbd9d752527.png)
 
 ## 修改插件配置
-> 通常我们需要将关键环节的日志信息上传到服务端，以生成观看报表、异常报表等数据分析内容。
+
+> 通常我们需要将关键环节的日志信息上传到服务端，以生成观看报表、异常报表等数据分析内容，这里我们就以日志插件为例，了解怎么使用插件的属性配置。
 
 你可以参考以下代码配置实现日志上报：
 
@@ -80,7 +81,11 @@ new ChimeePlayer({
   }]
 });
 ```
+
 更详细的日志说明、上报字段控制等，请参考[chimee-plugin-log 插件说明](https://github.com/Chimeejs/chimee-plugin-log/blob/master/README.md)。
+
+ChimeePlayer 打包的控制条插件也提供了很多定制化配置，具体请先考[chimee-plugin-controlbar 插件说明](https://github.com/Chimeejs/chimee-plugin-controlbar#chimee-plugin-controlbar).
+
 
 ## 添加自定义插件
 
