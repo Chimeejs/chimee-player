@@ -1,6 +1,6 @@
 {
   "name": "chimee-player",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A complete set of H5 player",
   "main": "lib/index.js",
   "module": "lib/index.mjs",
@@ -39,11 +39,11 @@
   "homepage": "https://github.com/Chimeejs/chimee-player#readme",
   "dependencies": {
     "babel-runtime": "^6.26.0",
-    "chimee": "^0.4.0",
+    "chimee": "^0.4.2",
     "chimee-helper": "^0.2.6",
-    "chimee-kernel-flv": "^1.2.0",
+    "chimee-kernel-flv": "^1.3.0",
     "chimee-kernel-hls": "^1.0.7",
-    "chimee-plugin-center-state": "0.0.7",
+    "chimee-plugin-center-state": "0.0.8",
     "chimee-plugin-contextmenu": "^0.1.0",
     "chimee-plugin-controlbar": "^0.2.7",
     "chimee-plugin-log": "0.0.3"

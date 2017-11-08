@@ -1,0 +1,50 @@
+<!doctype html>
+<html><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>清晰度切换测试</title>
+  <style type="text/css" media="screen">
+.chimee-container{
+  position: relative;
+}      
+  </style>
+</head>
+<body>
+
+ <div class="chimee-container">
+    <video tabindex="-1"></video>
+  </div>
+
+  <script src="../lib/index.browser.js" type="text/javascript"></script>
+<script>
+window.player = new ChimeePlayer({
+  wrapper: '.chimee-container',
+  src: 'http://yunxianchang.live.ujne7.com/vod-system-bj/TLaf2cc9d469939803949187b46da16c45.flv',
+  box:'flv',
+  isLive: false,
+  autoplay: true,
+  controls: true,
+  plugin: [
+    {
+        "name": "chimeeControl",
+        "children": {
+            play:{}, progressTime:{}, progressBar:{}, volume:{}, screen:{},
+            "clarity": {
+                "list": [{
+                    "name": "超清",
+                    "src": "http://yunxianchang.live.ujne7.com/vod-system-bj/TLaf2cc9d469939803949187b46da16c45.flv"
+                },
+                {
+                    "name": "高清",
+                    "src": "http://yunxianchang.live.ujne7.com/vod-system-bj/TLaf2cc9d469939803949187b46da16c45.flv?1"
+                }]
+            }
+        }
+    }  
+  ]
+});
+
+
+</script>
+
+</body></html>
