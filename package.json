@@ -1,6 +1,6 @@
 {
   "name": "chimee-player",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A complete set of H5 player",
   "main": "lib/index.js",
   "module": "lib/index.mjs",
@@ -32,7 +32,7 @@
     "javascript"
   ],
   "author": "huzunjie",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Chimeejs/chimee-player/issues"
   },
@@ -45,7 +45,7 @@
     "chimee-kernel-hls": "^1.0.7",
     "chimee-plugin-center-state": "0.0.8",
     "chimee-plugin-contextmenu": "^0.1.0",
-    "chimee-plugin-controlbar": "^0.2.7",
+    "chimee-plugin-controlbar": "^0.3.1",
     "chimee-plugin-log": "0.0.3"
   },
   "devDependencies": {
