@@ -1,11 +1,11 @@
 {
   "name": "chimee-player",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A complete set of H5 player",
-  "main": "lib/index.js",
-  "module": "lib/index.mjs",
-  "jsnext:main": "lib/index.mjs",
-  "browser": "lib/index.browser.js",
+  "main": "lib/chimee-player.js",
+  "module": "lib/chimee-player.mjs",
+  "jsnext:main": "lib/chimee-player.mjs",
+  "browser": "lib/chimee-player.browser.js",
   "scripts": {
     "test": "jest --coverage",
     "start": "jest --coverage --watch",
@@ -45,7 +45,7 @@
     "chimee-kernel-hls": "^1.0.7",
     "chimee-plugin-center-state": "0.0.8",
     "chimee-plugin-contextmenu": "^0.1.0",
-    "chimee-plugin-controlbar": "^0.3.1",
+    "chimee-plugin-controlbar": "^0.3.5",
     "chimee-plugin-log": "0.0.3"
   },
   "devDependencies": {
