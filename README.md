@@ -53,7 +53,7 @@ new ChimeePlayer({
   src: 'http://chimee.org/xxx/fff.flv',
   box: 'flv',
   isLive: true,
-  autoplay: true,
+  autoplay: true, // 注：flv直播中autoplay设置false无效
   controls: true
 });
 ```
