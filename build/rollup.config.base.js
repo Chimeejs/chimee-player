@@ -55,13 +55,18 @@ const babelConfig = {
   }
 };
 const externalRegExp = new RegExp(Object.keys(dependencies).join('|'));
+let idN = 0;
 export default function (modeConf) {
   const mode = modeConf.output.format;
   const config = {
     input: 'src/index.js',
     banner,
     external (id) {
-      return !/min|umd|iife/.test(mode) && externalRegExp.test(id);
+      /*if(/chimee\-helper/.test(id)){
+        idN++;
+        console.log(idN, 'id:', id);
+      }*/
+      return !/min|umd|iife/.test(mode) && externalRegExp.test(id) && !/\.css$/.test(id);
     },
     plugins: [
       postcss({

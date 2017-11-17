@@ -1,10 +1,10 @@
 import Chimee from 'chimee';
 import {isObject, isArray} from 'chimee-helper';
 import chimeeControl from 'chimee-plugin-controlbar';
-import chimeeCenterState from 'chimee-plugin-center-state';
+import popupFactory from 'chimee-plugin-popup';
 import chimeeContextmenu from 'chimee-plugin-contextmenu';
 import chimeeLog from 'chimee-plugin-log';
-import chimeePluginPopupFactory from 'chimee-plugin-popup';
+import chimeeCenterState from 'chimee-plugin-center-state';
 import chimeeKernelHls from 'chimee-kernel-hls';
 import chimeeKernelFlv from 'chimee-kernel-flv';
 import './index.css';
@@ -49,6 +49,6 @@ class ChimeePlayer extends Chimee {
   }
 }
 // 暴露浮层工厂方法
-ChimeePlayer.popupFactory = chimeePluginPopupFactory;
+ChimeePlayer.popupFactory = popupFactory;
 
 export default ChimeePlayer;
