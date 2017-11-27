@@ -1,0 +1,153 @@
+<!doctype html>
+<html><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>直播FLV清晰度切换测试</title>
+  <style type="text/css">
+  body{    background: #ccc;}
+  .chimee-container{
+    position: relative;
+    max-width: 800px;
+    margin: 10px 0;
+  }
+  h2{
+    border-bottom: solid 1px #ccc;
+  }
+  h2 a{
+    text-decoration: none;
+    background: #aeaeae;
+    color: #ddd;
+    padding: 10px 20px;
+    border-radius: 5px 5px 0 0;
+  }
+  h2 a.on{
+    color: #333;
+    background: #eee;
+  }
+  p{
+    padding: 0;
+    margin:0;
+  }
+  label{
+    font-size: 12px;
+    color: #333;
+  }
+  </style>
+</head>
+<body>
+  <h2>
+    <a href="?">HLS直播测试</a>
+    <a href="?flv">FLV直播测试</a>
+  </h2>
+  <button id="rebuild">重建播放器(destroy掉已有window.player实例，再重新构造)</button>
+  <div class="chimee-container">
+    <video tabindex="-1"></video>
+  </div>
+<!--   <p>
+    <input type="button" id="_duration" value="设置chimee.silentLoad的duration为10秒" title="流质量较差时设置，也可以控制台改window.__duration">
+  </p> -->
+  <p style="text-align: right; max-width:800px;">
+    在控制条中选择“雪域”“水镇”，动态切流。
+  </p>
+
+
+  <script src="../lib/chimee-player.browser.js" type="text/javascript"></script>
+
+  <script src="https://s.ssl.qhres.com/static/af3c1d4b462cc178/jquery.js" ></script>
+  <script>
+/*    $('#disabled_reload').change(function(){
+      console.log(window.__disabled_reload = this.checked);
+    });
+    $('#_duration').click(function(){
+      console.log(window.__duration = 1e4);
+    });*/
+    
+
+    var needFlv = location.href.indexOf('flv')!==-1;
+    $('h2 a').eq(+needFlv).addClass('on');
+
+    // 取个SD的直播流来用用
+    function getSDLiveUrl(sn){
+      var a = 've3.ji', b = '60.c';
+      return $.ajax({
+        url: 'https://li'+ a +'a.3'+ b +'n/public/getInfoAndPlayV2?from=mpc_ipcam_web&sn=36'+ sn +'&taskid='+ +new Date(),
+        type:'get',
+        dataType:'jsonp'
+      }).then(function(data){
+        var liveHLS = data && data.playInfo && data.playInfo.hls;
+        var ret = {};
+        if(liveHLS){
+          if(needFlv) liveHLS = liveHLS.replace('hls-live', 'flv-live').replace('/index.m3u8','.flv');
+          ret.url = liveHLS;
+          ret.poster = data.publicInfo.thumbnail;
+        }
+        return ret;
+      });
+    }
+
+    function start(){
+      Promise.all([
+        getSDLiveUrl('072754052'),
+        getSDLiveUrl('0K0905701'),
+        getSDLiveUrl('0K0902816')
+      ]).then(function(re){
+        if(!re[0].url || !re[1].url || !re[2].url){
+          alert('流地址异常');
+        }
+        rebuildPlayer(re[0].url, re[1].url, re[2].url);
+      })
+    }
+    // alert(11);
+    function rebuildPlayer(snow, water, city){
+      window.player && !window.player.destroyed && window.player.destroy();
+      window.player = new ChimeePlayer({
+        wrapper: '.chimee-container',
+        src: snow,
+        box:needFlv?'flv':'hls',
+        isLive: true,
+        autoplay: true,
+        controls: true,
+        //stashSize: 1024*64,
+        plugin: [
+          {
+              "name": "chimeeControl",
+              "children": {
+                  play:{}, progressTime:false, progressBar:false, volume:{}, screen:{},
+                  "clarity": {
+                      duration:30,
+                      "list": [{
+                          "name": "雪域",
+                          "src": snow
+                      },
+                      {
+                          "name": "水镇",
+                          "src": water
+                      },
+                      {
+                          "name": "test",
+                          "src": city
+                      }]
+                  }
+              }
+          }  
+        ]
+      });
+
+      player.on('ended',function(){
+        console.warn('ended~');
+      });
+      player.on('canplaythrough',function(){
+        console.warn('[main-test] canplaythrough~');
+      });
+      player.on('error',function(err){
+        console.warn('[main-test] player.error:', err);
+      })
+    }
+
+    $('#rebuild').click(start);
+
+    // 自动开始
+    start();
+  </script>
+
+</body></html>

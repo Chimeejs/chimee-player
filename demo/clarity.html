@@ -33,13 +33,14 @@ window.player = new ChimeePlayer({
         "children": {
             play:{}, progressTime:{}, progressBar:{}, volume:{}, screen:{},
             "clarity": {
+                duration:30,
                 "list": [{
                     "name": "超清",
                     "src": "http://yunxianchang.live.ujne7.com/vod-system-bj/TLaf2cc9d469939803949187b46da16c45.flv"
                 },
                 {
                     "name": "高清",
-                    "src": "http://yunxianchang.live.ujne7.com/vod-system-bj/TLaf2cc9d469939803949187b46da16c45.flv?1"
+                    "src": "http://yunxianchang.live.ujne7.com/vod-system-bj/TLaf2cc9d469939803949187b46da16c45.flv?new"
                 }]
             }
         }
@@ -47,7 +48,9 @@ window.player = new ChimeePlayer({
   ]
 });
 
-
+player.on('error',function(e){
+  console.log('[test] error', e);
+})
 </script>
 
 </body></html>
