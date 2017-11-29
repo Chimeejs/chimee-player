@@ -51,6 +51,9 @@ window.player = new ChimeePlayer({
 player.on('error',function(e){
   console.log('[test] error', e);
 })
+player.on('mediainfo',function(e){
+  console.log('[test] mediaInfo', e);
+})
 </script>
 
 </body></html>

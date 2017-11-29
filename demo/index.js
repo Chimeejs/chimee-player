@@ -57,6 +57,6 @@ getSDLiveHlsUrl('3'+'6052770915', function(hls, poster){
   $('button[data-box="hls"][data-type="live"]').attr('data-src',hls).attr('data-poster', poster);
 });
 // 取个SD的FLV直播流来用用
-getSDLiveHlsUrl('3' + '60K0909965', function(hls, poster){
+getSDLiveHlsUrl('3' + '60K0905701', function(hls, poster){
   $('button[data-box="flv"][data-type="live"]').attr('data-src',hls.replace('hls-live', 'flv-live').replace('/index.m3u8','.flv')).attr('data-poster', poster);
 });

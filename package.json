@@ -1,6 +1,6 @@
 {
   "name": "chimee-player",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A complete set of H5 player",
   "main": "lib/chimee-player.js",
   "module": "lib/chimee-player.mjs",
@@ -39,7 +39,7 @@
   "homepage": "https://github.com/Chimeejs/chimee-player#readme",
   "dependencies": {
     "babel-runtime": "^6.26.0",
-    "chimee": "^0.6.1",
+    "chimee": "^0.6.2",
     "chimee-helper": "^0.2.8",
     "chimee-kernel-flv": "^1.4.0",
     "chimee-kernel-hls": "^1.0.7",
@@ -67,7 +67,8 @@
     "rollup-plugin-node-resolve": "^3.0.0",
     "rollup-plugin-postcss": "^0.5.5",
     "rollup-plugin-replace": "^2.0.0",
-    "rollup-plugin-uglify": "^2.0.1"
+    "rollup-plugin-uglify": "^2.0.1",
+    "rollup-plugin-visualizer": "^0.3.1"
   },
   "jest": {
     "modulePaths": [

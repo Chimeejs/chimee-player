@@ -12,6 +12,7 @@ import commonjs from 'rollup-plugin-commonjs';
 import postcss from 'rollup-plugin-postcss';
 import uglify from 'rollup-plugin-uglify';
 import replace from 'rollup-plugin-replace';
+import visualizer from 'rollup-plugin-visualizer';
 // PostCSS plugins
 import nested from 'postcss-nested';
 import cssnano from 'cssnano';
@@ -49,8 +50,9 @@ const babelConfig = {
   },
   min: {
     presets: ['es2015-rollup'],
+    plugins: ['transform-runtime'],
     exclude: 'node_modules/**',
-    plugins: [],
+    runtimeHelpers: true,
     babelrc: false
   }
 };
@@ -81,6 +83,9 @@ export default function (modeConf) {
       commonjs(),
       replace({
         'process.env.NODE_ENV': JSON.stringify('production')
+      }),
+      visualizer({
+        filename: `bundle-size/${mode}.html`,
       })
     ]
   };
