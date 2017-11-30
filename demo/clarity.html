@@ -27,7 +27,13 @@ window.player = new ChimeePlayer({
   isLive: false,
   autoplay: true,
   controls: true,
-  debug:false,
+log: {
+    error: false,
+    info: false,
+    warn: false,
+    debug: false,
+    verbose: false,
+  },
   plugin: [
     {
         "name": "chimeeControl",
