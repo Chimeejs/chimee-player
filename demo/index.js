@@ -22,7 +22,7 @@ function rebuildPlayer (src, type, box, poster) {
 
 // 快捷按键操作
 $('#tabs_box button').on('click', function(e){
-  var data = e.target.dataset;
+  var data = $(this).data();
   $('#src').val(data.src);
   $('#type').val(data.type);
   $('#box').val(data.box);

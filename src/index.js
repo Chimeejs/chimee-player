@@ -9,6 +9,8 @@ import chimeeKernelHls from 'chimee-kernel-hls';
 import chimeeKernelFlv from 'chimee-kernel-flv';
 import './index.css';
 
+// import 'babel-polyfill';
+
 Chimee.install(chimeeControl);
 Chimee.install(chimeeCenterState);
 Chimee.install(chimeeContextmenu);
