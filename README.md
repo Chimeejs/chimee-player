@@ -116,5 +116,5 @@ new ChimeePlayer({
 ## 兼容 IE
 Chimee 本身的设计是兼容 IE 的， 但是需要 [babel-polyfill](https://babeljs.io/docs/usage/polyfill/) 的支持。因此如果你确实需要在 IE 中使用 chimee, 请确保你已引入 babel-polyfill。
 
-##### 希望您用着方便，有相应问题请随时反馈。
+*希望您用着方便，有相应问题请随时反馈。*
 
