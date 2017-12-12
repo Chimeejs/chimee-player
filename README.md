@@ -2,7 +2,7 @@
 
 这是基于[chimee](https://github.com/Chimeejs/chimee)集成的一套您可以直接使用的HTML5播放器，提供有了默认样式，此时要避免CSS中给video写死宽高值---以避免全屏不能正常使用。
 
-> 注意：当前文档适用于PC端，如果是移动端使用Chimee，您可以参考 [Chimee-mobild-player](https://github.com/Chimeejs/chimee-mobile-player/blob/master/README.md) 文档，移动端插件开发和注意事项可以参考[Chimee 移动端插件开发](https://github.com/Chimeejs/chimee-mobile-player/blob/master/doc/dev.md) 这篇文章。
+> 注意：当前文档适用于PC端，如果是移动端使用Chimee，您可以参考 [Chimee-mobile-player](https://github.com/Chimeejs/chimee-mobile-player/blob/master/README.md) 文档，移动端插件开发和注意事项可以参考[Chimee 移动端插件开发](https://github.com/Chimeejs/chimee-mobile-player/blob/master/doc/dev.md) 这篇文章。
 
 并集成了以下官方UI插件：
 > 1. [chimee-plugin-controlbar](https://github.com/Chimeejs/chimee-plugin-controlbar)
