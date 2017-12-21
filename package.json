@@ -1,6 +1,6 @@
 {
   "name": "chimee-player",
-  "version": "1.1.8",
+  "version": "1.1.9",
   "description": "A complete set of H5 player",
   "main": "lib/chimee-player.js",
   "module": "lib/chimee-player.mjs",
@@ -47,7 +47,7 @@
     "chimee-plugin-contextmenu": "^0.1.2",
     "chimee-plugin-controlbar": "^0.4.0",
     "chimee-plugin-log": "0.0.4",
-    "chimee-plugin-popup": "0.0.6"
+    "chimee-plugin-popup": "0.0.7"
   },
   "devDependencies": {
     "babel-eslint": "^8.0.3",
