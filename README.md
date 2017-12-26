@@ -14,22 +14,45 @@
 > 1. [chimee-kernel-flv](https://github.com/Chimeejs/chimee-kernel-flv)
 > 2. [chimee-kernel-hls](https://github.com/Chimeejs/chimee-kernel-hls)
 
-## 安装
+## 安装引用
 
-首先根据您的业务场景，你可以直接将lib目录下适合的打包文件引入您的业务代码中，比如直接引用JS。
+鉴于大家各自的业务构建场景的不同，可以从以下两种引用方式中选择适合自己的方案：
 
-或者您的项目基于nodejs环境构建的话，直接执行 `npm install chimee-player --save`，然后再在代码中`import ChimeePlayer from 'chimee-player';`即可。
+1 . 使用公共CDN上的JS，或者将lib目录下适合的打包文件放入业务目录中，直接引用JS:
+
+```html
+<!-- 注意：这里的 CDN 资源链接可能不是最新版，具体可访问：https://cdn.baomitu.com/chimee-player -->
+<script src="http://lib.baomitu.com/chimee-player/1.1.9/chimee-player.browser.js"></script>
+<script>
+new ChimeePlayer({
+  wrapper: '#wrapper',  // video dom容器
+  src: 'http://chimee.org/vod/1.mp4',
+  controls: true
+});
+</script>
+```
+
+2 . 项目是基于nodejs环境构建的话，可以先在项目目录下执行命令安装依赖包：
+
+```
+npm install chimee-player --save
+```
+然后再按照自己的使用习惯，将依赖 import 或 require 到业务代码中使用：
+
+```
+import ChimeePlayer from 'chimee-player';
+```
 
 ## 基本用法
 
-基于点播场景，可以这样使用：
+将 ChimeePlayer “安装引用” 到业务环境，就可以在业务逻辑中启用播放器了。
 
-> 需要先给要放置播放器的DOM容器增加一个class `chimee-container`，或者您自己有对容器写position非static的值的话，可以省掉这步。
+基于点播场景，可以这样使用：
 
 ```javascript
 new ChimeePlayer({
   wrapper: '#wrapper',  // video dom容器
-  src: 'http://cdn.toxicjohann.com/lostStar.mp4',
+  src: 'http://chimee.org/vod/1.mp4',
   autoplay: true,
   controls: true
 });
@@ -63,6 +86,8 @@ new ChimeePlayer({
 效果示例（本截图是已经点击右键“查看日志”开启日志输出之后的效果）：
 
 ![](https://p2.ssl.qhimg.com/dr/600__/t01093aadbd9d752527.png)
+
+这里的代码示例只给出了几个最基本的参数配置，更多配置请参考[ Chimee API 文档](http://chimee.org/docs/chimee_api.html) 。
 
 ## 修改插件配置
 
