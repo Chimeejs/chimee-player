@@ -1,7 +1,8 @@
-import base from './rollup.config.base';
-export default base({
-  output:{
+import base, { banner } from './rollup.config.base';
+export default Object.assign(base('es'), {
+  output: {
     format: 'es',
-    file: 'lib/chimee-player.mjs'
-  }
+    file: 'lib/chimee-player.mjs',
+    banner,
+  },
 });
