@@ -1,8 +1,6 @@
 import ChimeePlayer from 'index';
-// import { $ } from 'chimee-helper';
-
-// const $domWrap = $('<div id="wrapper"/>').appendTo(document.body);
-// const $dom = $domWrap[0];
+import { $ } from 'chimee-helper';
+$('<div id="wrapper"/>').appendTo(document.body);
 
 test('config empty', () => {
   expect(() => new ChimeePlayer()).toThrowError('You must pass an Object as config when you new ChimeePlayer');

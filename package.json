@@ -41,6 +41,7 @@
   "homepage": "https://github.com/Chimeejs/chimee-player#readme",
   "dependencies": {
     "babel-runtime": "^6.26.0",
+    "chimee": "^0.9.3",
     "chimee-helper": "^0.2.10",
     "chimee-kernel-flv": "^1.4.10",
     "chimee-kernel-hls": "^1.2.0",

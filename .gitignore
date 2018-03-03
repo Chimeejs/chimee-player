@@ -60,4 +60,5 @@ typings/
 .env
 
 lib/index.dev.js
+package-lock.json
 
