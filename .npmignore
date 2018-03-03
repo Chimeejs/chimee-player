@@ -1,0 +1,14 @@
+__mocks__/
+__tests__/
+tests/
+build/
+lib/index.dev.js
+coverage/
+demo/
+doc/
+flow/
+node_modules/
+tool/
+bundle-size/
+.babelrc
+.flowconfig
