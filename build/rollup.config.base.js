@@ -3,7 +3,7 @@ import { camelize } from 'toxic-utils';
 export const banner = `
 /** ${camelize(name)}
  * ${name} v${version}
- * (c) 2017 ${author}
+ * (c) 2017-${(new Date().getFullYear())} ${author}
  * Released under ${license}
  */
 `;
