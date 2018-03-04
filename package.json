@@ -64,6 +64,7 @@
     "eslint": "^4.12.1",
     "eslint-config-egg": "^7.0.0",
     "eslint-plugin-jest": "^21.4.2",
+    "husky": "^0.14.3",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^22.4.2",
     "pkg-ok": "^2.1.0",
