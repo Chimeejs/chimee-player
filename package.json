@@ -1,6 +1,6 @@
 {
   "name": "chimee-player",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "description": "A complete set of H5 player",
   "main": "lib/chimee-player.js",
   "module": "lib/chimee-player.mjs",
