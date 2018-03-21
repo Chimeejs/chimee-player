@@ -38,12 +38,12 @@ class ChimeePlayer extends Chimee {
     // 添加解码器
     config.kernels = deepAssign(config.kernels || {}, {
       hls: {
-        handler: chimeeKernelHls
+        handler: chimeeKernelHls,
       },
       flv: {
-        handler: chimeeKernelFlv
-      }
-    })
+        handler: chimeeKernelFlv,
+      },
+    });
 
     super(config);
 
