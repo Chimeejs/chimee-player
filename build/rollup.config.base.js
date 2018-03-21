@@ -13,9 +13,12 @@ import commonjs from 'rollup-plugin-commonjs';
 import postcss from 'rollup-plugin-postcss';
 import replace from 'rollup-plugin-replace';
 import visualizer from 'rollup-plugin-visualizer';
+import string from 'rollup-plugin-string';
+
 // PostCSS plugins
 import nested from 'postcss-nested';
 import cssnano from 'cssnano';
+import base64 from 'postcss-base64';
 
 const babelConfig = {
   common: {
@@ -28,8 +31,13 @@ const babelConfig = {
       }],
       'stage-0',
     ],
-    exclude: 'node_modules/**',
+    include: [
+      'src',
+      'node_modules/chimee-plugin-controlbar/**',
+      'node_modules/chimee-plugin-state/**',
+    ],
     plugins: [
+      'transform-decorators-legacy',
       'external-helpers',
       'transform-runtime',
     ],
@@ -47,8 +55,13 @@ const babelConfig = {
       }],
       'stage-0',
     ],
-    exclude: 'node_modules/**',
+    include: [
+      'src',
+      'node_modules/chimee-plugin-controlbar/**',
+      'node_modules/chimee-plugin-state/**',
+    ],
     plugins: [
+      'transform-decorators-legacy',
       'external-helpers',
       'transform-runtime',
     ],
@@ -66,8 +79,13 @@ const babelConfig = {
       }],
       'stage-0',
     ],
-    exclude: 'node_modules/**',
+    include: [
+      'src',
+      'node_modules/chimee-plugin-controlbar/**',
+      'node_modules/chimee-plugin-state/**',
+    ],
     plugins: [
+      'transform-decorators-legacy',
       'external-helpers',
       'transform-runtime',
     ],
@@ -85,8 +103,13 @@ const babelConfig = {
       }],
       'stage-0',
     ],
-    exclude: 'node_modules/**',
+    include: [
+      'src',
+      'node_modules/chimee-plugin-controlbar/**',
+      'node_modules/chimee-plugin-state/**',
+    ],
     plugins: [
+      'transform-decorators-legacy',
       'external-helpers',
       'transform-runtime',
     ],
@@ -104,8 +127,13 @@ const babelConfig = {
       }],
       'stage-0',
     ],
-    exclude: 'node_modules/**',
+    include: [
+      'src',
+      'node_modules/chimee-plugin-controlbar/**',
+      'node_modules/chimee-plugin-state/**',
+    ],
     plugins: [
+      'transform-decorators-legacy',
       'external-helpers',
     ],
     runtimeHelpers: true,
@@ -120,12 +148,20 @@ export default function(mode) {
       return !/min|umd|iife/.test(mode) && externalRegExp.test(id) && !/\.css$/.test(id);
     },
     plugins: [
+      string({
+        include: '**/*.svg',
+      }),
       postcss({
         plugins: [
+          base64({ // 暂时为center-state
+            extensions: [ '.svg' ],
+            root: 'node_modules/chimee-plugin-center-state/src',
+          }),
           nested(),
           cssnano(),
         ],
         extensions: [ '.css' ],
+        extract: true,
       }),
       babel(babelConfig[mode]),
       resolve(),

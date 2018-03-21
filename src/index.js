@@ -1,10 +1,10 @@
 import Chimee from 'chimee';
 import { isObject, isArray } from 'chimee-helper';
-import chimeeControl from 'chimee-plugin-controlbar';
+import chimeeControl from 'chimee-plugin-controlbar/src';
 import popupFactory from 'chimee-plugin-popup';
-import chimeeContextmenu from 'chimee-plugin-contextmenu';
+import chimeeContextmenu from 'chimee-plugin-contextmenu/src';
 import chimeeLog from 'chimee-plugin-log';
-import chimeeCenterState from 'chimee-plugin-center-state';
+import chimeeCenterState from 'chimee-plugin-center-state/src';
 import chimeeKernelHls from 'chimee-kernel-hls';
 import chimeeKernelFlv from 'chimee-kernel-flv';
 import './index.css';
