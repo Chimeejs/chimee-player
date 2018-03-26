@@ -72,6 +72,7 @@
     "pkg-ok": "^2.1.0",
     "postcss": "^5.2.18",
     "postcss-base64": "^0.7.1",
+    "postcss-nested": "^3.0.0",
     "rollup": "^0.56.5",
     "rollup-plugin-babel": "^3.0.2",
     "rollup-plugin-commonjs": "^9.0.0",

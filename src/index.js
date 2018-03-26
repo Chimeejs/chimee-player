@@ -1,5 +1,5 @@
 import Chimee from 'chimee';
-import { isObject, isArray } from 'chimee-helper';
+import { isObject, isArray, deepAssign } from 'chimee-helper';
 import chimeeControl from 'chimee-plugin-controlbar/src';
 import popupFactory from 'chimee-plugin-popup/src';
 import chimeeContextmenu from 'chimee-plugin-contextmenu/src';
@@ -36,12 +36,14 @@ class ChimeePlayer extends Chimee {
     });
 
     // 添加解码器
-    if (!isObject(config.preset)) {
-      config.preset = {
-        hls: chimeeKernelHls,
-        flv: chimeeKernelFlv,
-      };
-    }
+    config.kernels = deepAssign(config.kernels || {}, {
+      hls: {
+        handler: chimeeKernelHls,
+      },
+      flv: {
+        handler: chimeeKernelFlv,
+      },
+    });
 
     super(config);
 
