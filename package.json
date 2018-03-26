@@ -1,6 +1,6 @@
 {
   "name": "chimee-player",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "A complete set of H5 player",
   "main": "lib/chimee-player.js",
   "module": "lib/chimee-player.mjs",
@@ -59,6 +59,7 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.1",
+    "babel-preset-latest": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "contributor": "^0.1.25",
     "cssnano": "^3.10.0",
@@ -99,7 +100,7 @@
       "\\.css$": "identity-obj-proxy"
     },
     "transformIgnorePatterns": [
-      "/node_modules/(?!(chimee-plugin-controlbar|chimee-plugin-center-state|chimee-plugin-contextmenu)/).*/"
+      "/node_modules/(?!(chimee-plugin-controlbar|chimee-plugin-center-state|chimee-plugin-contextmenu|chimee-plugin-popup)/).*/"
     ],
     "transform": {
       ".*": "babel-jest"

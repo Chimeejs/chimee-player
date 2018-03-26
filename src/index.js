@@ -1,7 +1,7 @@
 import Chimee from 'chimee';
 import { isObject, isArray } from 'chimee-helper';
 import chimeeControl from 'chimee-plugin-controlbar/src';
-import popupFactory from 'chimee-plugin-popup';
+import popupFactory from 'chimee-plugin-popup/src';
 import chimeeContextmenu from 'chimee-plugin-contextmenu/src';
 import chimeeLog from 'chimee-plugin-log';
 import chimeeCenterState from 'chimee-plugin-center-state/src';

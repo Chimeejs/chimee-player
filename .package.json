@@ -1,6 +1,6 @@
 {
   "name": "chimee-player",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "A complete set of H5 player",
   "main": "lib/chimee-player.js",
   "module": "lib/chimee-player.mjs",
@@ -48,15 +48,18 @@
     "chimee-plugin-contextmenu": "^0.1.2",
     "chimee-plugin-controlbar": "^0.4.0",
     "chimee-plugin-log": "0.0.4",
-    "chimee-plugin-popup": "0.0.7"
+    "chimee-plugin-popup": "0.0.7",
+    "postcss": "^0.3.5"
   },
   "devDependencies": {
     "babel-eslint": "^8.0.3",
     "babel-jest": "^22.4.1",
     "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.1",
+    "babel-preset-latest": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "contributor": "^0.1.25",
     "cssnano": "^3.10.0",
@@ -67,7 +70,8 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^22.4.2",
     "pkg-ok": "^2.1.0",
-    "postcss-nested": "^3.0.0",
+    "postcss": "^5.2.18",
+    "postcss-base64": "^0.7.1",
     "rollup": "^0.56.5",
     "rollup-plugin-babel": "^3.0.2",
     "rollup-plugin-commonjs": "^9.0.0",
@@ -96,22 +100,13 @@
       "\\.css$": "identity-obj-proxy"
     },
     "transformIgnorePatterns": [
-      "/node_modules/(?!(chimee-plugin-controlbar|chimee-plugin-center-state|chimee-plugin-contextmenu)/).*/"
+      "/node_modules/(?!(chimee-plugin-controlbar|chimee-plugin-center-state|chimee-plugin-contextmenu|chimee-plugin-popup)/).*/"
     ],
     "transform": {
       ".*": "babel-jest"
     }
   },
   "contributors": [
-    {
-      "name": "胡尊杰",
-      "email": null,
-      "url": "https://github.com/huzunjie",
-      "contributions": 23,
-      "additions": 367,
-      "deletions": 39,
-      "hireable": null
-    },
     {
       "name": "Johann",
       "email": null,
@@ -120,6 +115,15 @@
       "additions": 17043,
       "deletions": 15360,
       "hireable": true
+    },
+    {
+      "name": "胡尊杰",
+      "email": null,
+      "url": "https://github.com/huzunjie",
+      "contributions": 23,
+      "additions": 367,
+      "deletions": 39,
+      "hireable": null
     }
   ]
 }

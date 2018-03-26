@@ -32,9 +32,11 @@ const babelConfig = {
       'stage-0',
     ],
     include: [
-      'src',
+      'src/**',
       'node_modules/chimee-plugin-controlbar/**',
-      'node_modules/chimee-plugin-state/**',
+      'node_modules/chimee-plugin-center-state/**',
+      'node_modules/chimee-plugin-contextmenu/**',
+      'node_modules/chimee-plugin-popup/**',
     ],
     plugins: [
       'transform-decorators-legacy',
@@ -56,9 +58,11 @@ const babelConfig = {
       'stage-0',
     ],
     include: [
-      'src',
+      'src/**',
       'node_modules/chimee-plugin-controlbar/**',
-      'node_modules/chimee-plugin-state/**',
+      'node_modules/chimee-plugin-center-state/**',
+      'node_modules/chimee-plugin-contextmenu/**',
+      'node_modules/chimee-plugin-popup/**',
     ],
     plugins: [
       'transform-decorators-legacy',
@@ -80,9 +84,12 @@ const babelConfig = {
       'stage-0',
     ],
     include: [
-      'src',
+      'src/**',
       'node_modules/chimee-plugin-controlbar/**',
-      'node_modules/chimee-plugin-state/**',
+      'node_modules/chimee-plugin-center-state/**',
+      'node_modules/chimee-plugin-contextmenu/**',
+      'node_modules/chimee-plugin-popup/**',
+      'node_modules/chimee-plugin-log/**',
     ],
     plugins: [
       'transform-decorators-legacy',
@@ -104,9 +111,11 @@ const babelConfig = {
       'stage-0',
     ],
     include: [
-      'src',
+      'src/**',
       'node_modules/chimee-plugin-controlbar/**',
-      'node_modules/chimee-plugin-state/**',
+      'node_modules/chimee-plugin-center-state/**',
+      'node_modules/chimee-plugin-contextmenu/**',
+      'node_modules/chimee-plugin-popup/**',
     ],
     plugins: [
       'transform-decorators-legacy',
@@ -128,9 +137,11 @@ const babelConfig = {
       'stage-0',
     ],
     include: [
-      'src',
+      'src/**',
       'node_modules/chimee-plugin-controlbar/**',
-      'node_modules/chimee-plugin-state/**',
+      'node_modules/chimee-plugin-center-state/**',
+      'node_modules/chimee-plugin-contextmenu/**',
+      'node_modules/chimee-plugin-popup/**',
     ],
     plugins: [
       'transform-decorators-legacy',
