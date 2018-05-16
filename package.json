@@ -1,6 +1,6 @@
 {
   "name": "chimee-player",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "A complete set of H5 player",
   "main": "lib/chimee-player.js",
   "module": "lib/chimee-player.mjs",
@@ -46,7 +46,7 @@
     "chimee-kernel-hls": "^1.3.0",
     "chimee-plugin-center-state": "0.0.10",
     "chimee-plugin-contextmenu": "^0.1.2",
-    "chimee-plugin-controlbar": "^0.4.0",
+    "chimee-plugin-controlbar": "^0.4.5",
     "chimee-plugin-log": "0.0.4",
     "chimee-plugin-popup": "0.0.7",
     "postcss": "^0.3.5"
@@ -109,15 +109,6 @@
   },
   "contributors": [
     {
-      "name": "Johann",
-      "email": null,
-      "url": "https://github.com/toxic-johann",
-      "contributions": 13,
-      "additions": 17043,
-      "deletions": 15360,
-      "hireable": true
-    },
-    {
       "name": "胡尊杰",
       "email": null,
       "url": "https://github.com/huzunjie",
@@ -125,6 +116,15 @@
       "additions": 367,
       "deletions": 39,
       "hireable": null
+    },
+    {
+      "name": "Johann",
+      "email": null,
+      "url": "https://github.com/toxic-johann",
+      "contributions": 13,
+      "additions": 17043,
+      "deletions": 15360,
+      "hireable": true
     }
   ]
 }
