@@ -109,12 +109,12 @@
   },
   "contributors": [
     {
-      "name": "胡尊杰",
+      "name": "yandeqiang",
       "email": null,
-      "url": "https://github.com/huzunjie",
-      "contributions": 23,
-      "additions": 367,
-      "deletions": 39,
+      "url": "https://github.com/yandeqiang",
+      "contributions": 2,
+      "additions": 177,
+      "deletions": 171,
       "hireable": null
     },
     {
@@ -127,12 +127,12 @@
       "hireable": true
     },
     {
-      "name": "yandeqiang",
+      "name": "胡尊杰",
       "email": null,
-      "url": "https://github.com/yandeqiang",
-      "contributions": 2,
-      "additions": 177,
-      "deletions": 171,
+      "url": "https://github.com/huzunjie",
+      "contributions": 23,
+      "additions": 367,
+      "deletions": 39,
       "hireable": null
     }
   ]

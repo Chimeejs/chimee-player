@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../lib/chimee-player.browser.css">
+</head>
+<body>
+  <div id="wrapper"></div>
+  <script src="../lib/chimee-player.browser.js"></script>
+  <script>
+    const __play = new ChimeePlayer({
+      wrapper: '#wrapper',
+      src: 'http://btime.v.k.360kan.com/vod-xinxiliu-tv-q3-bj/126476579_1-1527038948-e5a04b3b-323c-008c.mp4?time=1527129078&sign=47c5b9bb3e310bb3ce3d370c6f7361c0&from=jrbd_from_1709747284',
+      isLive: false,
+      box: 'native',
+      autoplay: true,
+      controls: true,
+      volume: 0.5,
+      preload: 'none'
+    });
+    __play.on('play', function () {console.log(1)})
+    __play.on('pause', function () {console.log(2)})
+    __play.on('waiting', function () {console.log(3)})
+    __play.on('playing', function () {console.log(4)})
+  </script>
+</body>
+</html>

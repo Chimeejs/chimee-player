@@ -15,7 +15,8 @@ function rebuildPlayer (src, type, box, poster) {
     // dom容器
     wrapper: '#wrapper',
     // video
-    autoplay: true,
+    // autoplay: true,
+    preload: 'none',
     controls: true
   });
 }
