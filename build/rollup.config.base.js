@@ -73,6 +73,32 @@ const babelConfig = {
     runtimeHelpers: true,
     babelrc: false,
   },
+  esm: {
+    presets: [
+      [ 'env', {
+        modules: false,
+        targets: {
+          browsers: [ 'last 2 versions', 'not ie <= 8' ],
+        },
+      }],
+      'stage-0',
+    ],
+    include: [
+      'src/**',
+      'node_modules/chimee-plugin-controlbar/**',
+      'node_modules/chimee-plugin-center-state/**',
+      'node_modules/chimee-plugin-contextmenu/**',
+      'node_modules/chimee-plugin-popup/**',
+    ],
+    plugins: [
+      'external-helpers',
+      'transform-decorators-legacy',
+      'transform-runtime',
+    ],
+    externalHelpers: true,
+    runtimeHelpers: true,
+    babelrc: false,
+  },
   umd: {
     presets: [
       [ 'env', {
@@ -156,7 +182,7 @@ export default function(mode) {
   const config = {
     input: 'src/index.js',
     external(id) {
-      return !/min|umd|iife/.test(mode) && externalRegExp.test(id) && !/\.css$/.test(id);
+      return !/min|umd|iife|esm/.test(mode) && externalRegExp.test(id) && !/\.css$/.test(id);
     },
     plugins: [
       string({
