@@ -1,6 +1,3 @@
-@import 'node_modules/chimee-plugin-controlbar/src/control.css';
-@import 'node_modules/chimee-plugin-center-state/src/centerstate.css';
-@import 'node_modules/chimee-plugin-contextmenu/src/index.css';
 .chimee-container {
   container{
     position: relative;

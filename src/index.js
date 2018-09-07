@@ -7,6 +7,9 @@ import chimeeLog from 'chimee-plugin-log';
 import chimeeCenterState from 'chimee-plugin-center-state/src';
 import chimeeKernelHls from 'chimee-kernel-hls';
 import chimeeKernelFlv from 'chimee-kernel-flv';
+import 'chimee-plugin-controlbar/src/control.css';
+import 'chimee-plugin-center-state/src/centerstate.css';
+import 'chimee-plugin-contextmenu/src/index.css';
 import './index.css';
 
 // import 'babel-polyfill';
