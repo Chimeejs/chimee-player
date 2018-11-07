@@ -23,25 +23,19 @@ import base64 from 'postcss-base64';
 const babelConfig = {
   common: {
     presets: [
-      [ 'env', {
+      [ '@babel/env', {
         modules: false,
         targets: {
           browsers: [ 'last 2 versions', 'not ie <= 8' ],
         },
       }],
-      'stage-0',
     ],
     include: [
       'src/**',
-      'node_modules/chimee-plugin-controlbar/**',
-      'node_modules/chimee-plugin-center-state/**',
-      'node_modules/chimee-plugin-contextmenu/**',
-      'node_modules/chimee-plugin-popup/**',
     ],
     plugins: [
-      'transform-decorators-legacy',
-      'external-helpers',
-      'transform-runtime',
+      [ '@babel/plugin-proposal-decorators', { legacy: true }],
+      '@babel/transform-runtime',
     ],
     externalHelpers: true,
     runtimeHelpers: true,
@@ -49,25 +43,19 @@ const babelConfig = {
   },
   es: {
     presets: [
-      [ 'env', {
+      [ '@babel/env', {
         modules: false,
         targets: {
           browsers: [ 'last 2 versions', 'not ie <= 8' ],
         },
       }],
-      'stage-0',
     ],
     include: [
       'src/**',
-      'node_modules/chimee-plugin-controlbar/**',
-      'node_modules/chimee-plugin-center-state/**',
-      'node_modules/chimee-plugin-contextmenu/**',
-      'node_modules/chimee-plugin-popup/**',
     ],
     plugins: [
-      'transform-decorators-legacy',
-      'external-helpers',
-      'transform-runtime',
+      [ '@babel/plugin-proposal-decorators', { legacy: true }],
+      '@babel/transform-runtime',
     ],
     externalHelpers: true,
     runtimeHelpers: true,
@@ -75,25 +63,19 @@ const babelConfig = {
   },
   esm: {
     presets: [
-      [ 'env', {
+      [ '@babel/env', {
         modules: false,
         targets: {
           browsers: [ 'last 2 versions', 'not ie <= 8' ],
         },
       }],
-      'stage-0',
     ],
     include: [
       'src/**',
-      'node_modules/chimee-plugin-controlbar/**',
-      'node_modules/chimee-plugin-center-state/**',
-      'node_modules/chimee-plugin-contextmenu/**',
-      'node_modules/chimee-plugin-popup/**',
     ],
     plugins: [
-      'external-helpers',
-      'transform-decorators-legacy',
-      'transform-runtime',
+      [ '@babel/plugin-proposal-decorators', { legacy: true }],
+      '@babel/transform-runtime',
     ],
     externalHelpers: true,
     runtimeHelpers: true,
@@ -101,26 +83,19 @@ const babelConfig = {
   },
   umd: {
     presets: [
-      [ 'env', {
+      [ '@babel/env', {
         modules: false,
         targets: {
           browsers: [ 'last 2 versions', 'not ie <= 8' ],
         },
       }],
-      'stage-0',
     ],
     include: [
       'src/**',
-      'node_modules/chimee-plugin-controlbar/**',
-      'node_modules/chimee-plugin-center-state/**',
-      'node_modules/chimee-plugin-contextmenu/**',
-      'node_modules/chimee-plugin-popup/**',
-      'node_modules/chimee-plugin-log/**',
     ],
     plugins: [
-      'transform-decorators-legacy',
-      'external-helpers',
-      'transform-runtime',
+      [ '@babel/plugin-proposal-decorators', { legacy: true }],
+      '@babel/transform-runtime',
     ],
     externalHelpers: true,
     runtimeHelpers: true,
@@ -128,25 +103,19 @@ const babelConfig = {
   },
   iife: {
     presets: [
-      [ 'env', {
+      [ '@babel/env', {
         modules: false,
         targets: {
           browsers: [ 'last 2 versions', 'not ie <= 8' ],
         },
       }],
-      'stage-0',
     ],
     include: [
       'src/**',
-      'node_modules/chimee-plugin-controlbar/**',
-      'node_modules/chimee-plugin-center-state/**',
-      'node_modules/chimee-plugin-contextmenu/**',
-      'node_modules/chimee-plugin-popup/**',
     ],
     plugins: [
-      'transform-decorators-legacy',
-      'external-helpers',
-      'transform-runtime',
+      [ '@babel/plugin-proposal-decorators', { legacy: true }],
+      '@babel/transform-runtime',
     ],
     externalHelpers: true,
     runtimeHelpers: true,
@@ -154,24 +123,18 @@ const babelConfig = {
   },
   min: {
     presets: [
-      [ 'env', {
+      [ '@babel/env', {
         modules: false,
         targets: {
           browsers: [ 'last 2 versions', 'not ie <= 8' ],
         },
       }],
-      'stage-0',
     ],
     include: [
       'src/**',
-      'node_modules/chimee-plugin-controlbar/**',
-      'node_modules/chimee-plugin-center-state/**',
-      'node_modules/chimee-plugin-contextmenu/**',
-      'node_modules/chimee-plugin-popup/**',
     ],
     plugins: [
-      'transform-decorators-legacy',
-      'external-helpers',
+      [ '@babel/plugin-proposal-decorators', { legacy: true }],
     ],
     runtimeHelpers: true,
     babelrc: false,
