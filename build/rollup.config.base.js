@@ -32,6 +32,10 @@ const babelConfig = {
     ],
     include: [
       'src/**',
+      'node_modules/chimee-plugin-controlbar/**',
+      'node_modules/chimee-plugin-center-state/**',
+      'node_modules/chimee-plugin-contextmenu/**',
+      'node_modules/chimee-plugin-popup/**',
     ],
     plugins: [
       [ '@babel/plugin-proposal-decorators', { legacy: true }],
@@ -52,6 +56,10 @@ const babelConfig = {
     ],
     include: [
       'src/**',
+      'node_modules/chimee-plugin-controlbar/**',
+      'node_modules/chimee-plugin-center-state/**',
+      'node_modules/chimee-plugin-contextmenu/**',
+      'node_modules/chimee-plugin-popup/**',
     ],
     plugins: [
       [ '@babel/plugin-proposal-decorators', { legacy: true }],
@@ -72,6 +80,10 @@ const babelConfig = {
     ],
     include: [
       'src/**',
+      'node_modules/chimee-plugin-controlbar/**',
+      'node_modules/chimee-plugin-center-state/**',
+      'node_modules/chimee-plugin-contextmenu/**',
+      'node_modules/chimee-plugin-popup/**',
     ],
     plugins: [
       [ '@babel/plugin-proposal-decorators', { legacy: true }],
@@ -92,6 +104,10 @@ const babelConfig = {
     ],
     include: [
       'src/**',
+      'node_modules/chimee-plugin-controlbar/**',
+      'node_modules/chimee-plugin-center-state/**',
+      'node_modules/chimee-plugin-contextmenu/**',
+      'node_modules/chimee-plugin-popup/**',
     ],
     plugins: [
       [ '@babel/plugin-proposal-decorators', { legacy: true }],
@@ -112,6 +128,10 @@ const babelConfig = {
     ],
     include: [
       'src/**',
+      'node_modules/chimee-plugin-controlbar/**',
+      'node_modules/chimee-plugin-center-state/**',
+      'node_modules/chimee-plugin-contextmenu/**',
+      'node_modules/chimee-plugin-popup/**',
     ],
     plugins: [
       [ '@babel/plugin-proposal-decorators', { legacy: true }],
@@ -132,6 +152,10 @@ const babelConfig = {
     ],
     include: [
       'src/**',
+      'node_modules/chimee-plugin-controlbar/**',
+      'node_modules/chimee-plugin-center-state/**',
+      'node_modules/chimee-plugin-contextmenu/**',
+      'node_modules/chimee-plugin-popup/**',
     ],
     plugins: [
       [ '@babel/plugin-proposal-decorators', { legacy: true }],
