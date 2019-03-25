@@ -17,13 +17,15 @@
 
 不得不再次强调：[Chimee 是一套组件化视频播放器框架](http://chimee.org/docs/why_chimee_is_a_frame.html#%E4%BA%8B%E4%BB%B6%E6%8C%82%E8%B5%B7)，基于组件化插件的[应用](http://chimee.org/docs/chimee_api.html#plugin)与[定制化组件开发](http://chimee.org/docs/chimee_plugin_api.html)，可以很方便的达成[更有特色且更契合业务需求的功能开发](http://chimee.org/docs/how_to_write_a_popup_plugin.html)；但前提是您必须有足够的好奇心和精力、能够预先充分[了解 Chimee](http://chimee.org/docs/chimee_readme.html) 和掌握业务需求。
 
-如果精力不是很充足，那么可以结合目标业务场景，使用官方提供的基于 Chimee 打包后的 [适合PC端的Chimee-Player](http://chimee.org/docs/chimee_player.html)或是[适合移动端的Chimee-Mobile-Player](http://chimee.org/docs/chimee_mobile_player.html)。
+如果精力不是很充足，那么可以结合目标业务场景，使用官方提供的基于 Chimee 打包后的 [适合PC端的Chimee-Player](http://chimee.org/docs/chimee_player.html)或是[适合移动端的Chimee-Mobile-Player](http://chimee.org/docs/chimee_mobile_player.html) 。
 
 ## 几种方案的用法
 
 不管是基于[Chimee](http://chimee.org/docs/chimee_readme.html)、还是[Chimee-Player](http://chimee.org/docs/chimee_player.html)、亦或者是[Chimee-Mobile-Player](http://chimee.org/docs/chimee_mobile_player.html)，官方都提供了[多种不同的构建输出版本](http://chimee.org/docs/chimee_readme.html#%E4%B8%8D%E5%90%8C%E7%9A%84%E6%9E%84%E5%BB%BA%E7%89%88%E6%9C%AC)来满足不同业务应用场景的开发需求。
 
 可以选择基于 `npm install 模块名称 --save`在自有构建环境进行依赖安装，也可以直接使用`<script src='模块构建结果JS URL'></script>`引入到业务页面中。
+
+**注意：** 在 1.4.0 版本（包括）以上， css与js分开打包了，此时需要单独引入 css 文件 lib/chimee-player.browser.css
 
 下面具体分别来看看：
 
@@ -259,7 +261,7 @@ class MyChimeePlayer extends Chimee {
 
 export default MyChimeePlayer;
 ```
-更详细的说明及文档请参考：http://chimee.org/docs/chimee_api.html。
+更详细的说明及文档请参考：http://chimee.org/docs/chimee_api.html 
 
 ### 写在最后
 ChimeeJS的每个项目模块源码中，都包含一个`demo`目录，可以参考里面的示例，进行相应模块的使用或二次开发。
