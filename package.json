@@ -17,7 +17,9 @@
     "b-es": "rollup -c build/rollup.config.es.js",
     "b-umd": "rollup -c build/rollup.config.umd.js",
     "b-esm": "rollup -c build/rollup.config.esm.js",
-    "b-min": "rollup -c build/rollup.config.min.js"
+    "b-min": "rollup -c build/rollup.config.min.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -47,7 +49,8 @@
     "chimee-plugin-contextmenu": "^0.1.2",
     "chimee-plugin-controlbar": "^0.5.0",
     "chimee-plugin-log": "0.0.4",
-    "chimee-plugin-popup": "0.0.7"
+    "chimee-plugin-popup": "0.0.7",
+    "snyk": "^1.192.4"
   },
   "devDependencies": {
     "@babel/core": "^7.1.5",
@@ -151,5 +154,6 @@
       "deletions": 39,
       "hireable": null
     }
-  ]
+  ],
+  "snyk": true
 }
