@@ -45,7 +45,7 @@
     "chimee-kernel-hls": "^1.3.2",
     "chimee-plugin-center-state": "0.0.14",
     "chimee-plugin-contextmenu": "^0.1.2",
-    "chimee-plugin-controlbar": "^0.5.0",
+    "chimee-plugin-controlbar": "^0.4.11",
     "chimee-plugin-log": "0.0.4",
     "chimee-plugin-popup": "0.0.8"
   },
